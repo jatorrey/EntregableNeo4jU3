@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "0061d8a5-df47-42a6-952d-79de668c43bd",
+		"name": "Querys U3 noSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39047919"
+	},
+	"item": [
+		{
+			"name": "Mas 5 Empleados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/masDe5Empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"masDe5Empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas 3 Gestiones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/gerenteMasDeTresProyectos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"gerenteMasDeTresProyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Programadores Backend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/programadoresBackend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"programadoresBackend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas de 1,000,000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/proyectos/masDeMillon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"proyectos",
+						"masDeMillon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Soporte Tecnico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/tecnicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"tecnicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Especifico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/clienteEspecifico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"clienteEspecifico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas de 5 visitas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/masDe5Visitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"masDe5Visitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas de 500k",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/programadoresMasDe500k",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"programadoresMasDe500k"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes mas de 3 proyectos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/masDeTresProyectos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"masDeTresProyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sucursales con desarrolladores full-stack > 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/masDe5Fullstack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"masDe5Fullstack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traspasar Tecnicos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"origen\": \"S002\",\r\n    \"destino\": \"S004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/traspasarTecnicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"traspasarTecnicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reemplazo de Gerente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sucursal\": \"S001\",\r\n    \"gerente\": \"ATO789012\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/reemplazarGerente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"reemplazarGerente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transferir Proyecto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sucursalOrigen\": \"S001\",\r\n    \"sucursalDestino\": \"S002\",\r\n    \"proyecto\": \"P0A1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/transferirProyecto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"transferirProyecto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes sin Visitas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/clientesSinVisitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"clientesSinVisitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transferir empleados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sucursalOrigen\": \"S005\",\r\n    \"sucursalDestino\": \"S001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/transferirEmpleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"transferirEmpleados"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
