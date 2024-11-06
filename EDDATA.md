@@ -507,13 +507,13 @@ Q01. Obtener la lista de sucursales que tienen más de 5 empleados.
     MATCH (s:Sucursal)-[:TIENE_EMPLEADO]->(e:Empleado)
     WITH s, COUNT(e) AS cantidadEmpleados
     WHERE cantidadEmpleados > 5
-    RETURN s.nombre;
+    RETURN s;
 
 Q02. Encontrar los gerentes que gestionan más de 3 proyectos simultáneamente.
     MATCH (e:Empleado)-[:GESTIONA_PROYECTO]->(p:Proyecto)
     WITH e, COUNT(p) AS numProyectos
     WHERE numProyectos > 3
-    RETURN e;
+    RETURN e.nombre;
 
 Q03. Obtener la lista de desarrolladores con especialización en back-end que están trabajando en más de 2 proyectos.
     MATCH (e:Empleado {especializacion: 'Backend'})-[:TRABAJA_EN_PROYECTO]->(p:Proyecto)
@@ -534,9 +534,9 @@ Q06. Encontrar los proyectos que corresponden a un cliente en específico.
     RETURN p.nombre;
 
 Q07. Obtener la lista de sucursales que han recibido visitas de más de 5 clientes diferentes.
-    MATCH (s:Sucursal)-[:VISITA_LUGAR]<-(v:Visita)-[:VISITA_CLIENTE]->(c:Cliente)
+    MATCH (s:Sucursal)<-[:VISITA_LUGAR]-(v:Visita)-[:VISITA_CLIENTE]->(c:Cliente)
     WITH s, COUNT(DISTINCT c) AS cantidadClientes
-    WHERE cantidadClientes > 5
+    WHERE cantidadClientes >= 5
     RETURN s.nombre;
 
 Q08. Encontrar a los desarrolladores que han trabajado en proyectos con un presupuesto total mayor a $500,000.
@@ -545,7 +545,7 @@ Q08. Encontrar a los desarrolladores que han trabajado en proyectos con un presu
     RETURN e.nombre;
 
 Q09. Obtener la lista de clientes que han contratado más de 3 proyectos en diferentes sucursales.
-    MATCH (c:Cliente)->[:CONTRATA_PROYECTO]->(p:Proyecto)-[:PROYECTO_UBICADO]->(s:Sucursal)
+    MATCH (c:Cliente)-[:CONTRATA_PROYECTO]->(p:Proyecto)-[:PROYECTO_UBICADO]->(s:Sucursal)
     WITH c, COUNT(DISTINCT s) AS numSucursales
     WHERE numSucursales > 3
     RETURN c.nombre;
@@ -557,8 +557,8 @@ Q10. Encontrar las sucursales que tienen más de 5 desarrolladores especializado
     RETURN s.nombre;
 
 Q11. Transferir todos los empleados de soporte técnico de una sucursal en específico hacia otra sucursal.
-    MATCH (s1:Sucursal {clave: 'S001'})-[r:TIENE_EMPLEADO]->(e:Empleado {tipo: 'Soporte'}), (s2:Sucursal {clave: 'S002'})
-    MERGE (s2)-[TIENE_EMPLEADO]->(e)
+    MATCH (s1:Sucursal {clave: 'S002'})-[r:TIENE_EMPLEADO]->(e:Empleado {tipo: 'Soporte'}), (s2:Sucursal {clave: 'S004'})
+    MERGE (s2)-[:TIENE_EMPLEADO]->(e)
     DELETE r;
 
 Q12. Reemplaza al gerente de una sucursal en específico.
@@ -569,19 +569,19 @@ Q12. Reemplaza al gerente de una sucursal en específico.
     MERGE (s)-[r:TIENE_EMPLEADO]->(e2);
 
 Q13. Cambie un proyecto en específico a otra sucursal, incluyendo la totalidad de participantes en el proyecto.
-    MATCH (p:Proyecto)-[r:PROYECTO_UBICADO]->(s1:Sucursal: {clave: 'S001'})
-    MATCH (s2:Sucursal: {clave: 'S002'})
+    MATCH (p:Proyecto {clave: 'P0A1'})-[r:PROYECTO_UBICADO]->(s1:Sucursal {clave: 'S001'})
+    MATCH (s2:Sucursal {clave: 'S002'})
     MERGE (p)-[:PROYECTO_UBICADO]->(s2)
     DELETE r;
 
 Q14. Obtener la lista de clientes que nunca han realizado visitas a las sucursales.
     MATCH (c:Cliente)
-    WHERE NOT (c)<-[:VISITA_CLIENTE]-(v:Visita)
+    WHERE NOT (c)<-[:VISITA_CLIENTE]-(:Visita)
     RETURN c.nombre;
 
 Q15. Todos los empleados de una sucursal determinada son transferidos a otra sucursal por cierre de sucursal de origen.
-    MATCH (s1:Sucursal {clave: 'S001'})-[r:TIENE_EMPLEADO]->(e:Empleado), (s2:Sucursal {clave: 'S002'})
-    MERGE (s2)-[TIENE_EMPLEADO]->(e)
+    MATCH (s1:Sucursal {clave: 'S005'})-[r:TIENE_EMPLEADO]->(e:Empleado), (s2:Sucursal {clave: 'S001'})
+    MERGE (s2)-[:TIENE_EMPLEADO]->(e)
     DELETE r
     DETACH DELETE s1;
 
