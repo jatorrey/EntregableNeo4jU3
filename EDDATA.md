@@ -602,3 +602,1113 @@ Q13. http://localhost:3000/api/sucursales/transferirProyecto
 Q14. http://localhost:3000/api/clientes/clientesSinVisitas
 Q15. http://localhost:3000/api/sucursales/transferirEmpleados
 
+
+# Codigo JSON para importar las consultas de la base de datos en Postman
+
+{
+	"info": {
+		"_postman_id": "0061d8a5-df47-42a6-952d-79de668c43bd",
+		"name": "Querys U3 noSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39047919"
+	},
+	"item": [
+		{
+			"name": "Mas 5 Empleados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/masDe5Empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"masDe5Empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas 3 Gestiones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/gerenteMasDeTresProyectos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"gerenteMasDeTresProyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Programadores Backend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/programadoresBackend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"programadoresBackend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas de 1,000,000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/proyectos/masDeMillon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"proyectos",
+						"masDeMillon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Soporte Tecnico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/tecnicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"tecnicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Especifico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/clienteEspecifico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"clienteEspecifico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas de 5 visitas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/masDe5Visitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"masDe5Visitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mas de 500k",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/programadoresMasDe500k",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"programadoresMasDe500k"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes mas de 3 proyectos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/masDeTresProyectos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"masDeTresProyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sucursales con desarrolladores full-stack > 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/masDe5Fullstack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"masDe5Fullstack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traspasar Tecnicos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"origen\": \"S002\",\r\n    \"destino\": \"S004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/traspasarTecnicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"traspasarTecnicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reemplazo de Gerente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sucursal\": \"S001\",\r\n    \"gerente\": \"ATO789012\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/reemplazarGerente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"reemplazarGerente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transferir Proyecto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sucursalOrigen\": \"S001\",\r\n    \"sucursalDestino\": \"S002\",\r\n    \"proyecto\": \"P0A1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/transferirProyecto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"transferirProyecto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes sin Visitas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/clientesSinVisitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"clientesSinVisitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transferir empleados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sucursalOrigen\": \"S005\",\r\n    \"sucursalDestino\": \"S001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sucursales/transferirEmpleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sucursales",
+						"transferirEmpleados"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+
+# Codigo del Backend del proyecto
+
+> SRC
+    > controller
+        > clientesController.js
+        > empleadosController.js
+        > sucursalesController.js
+    > model
+        > clientesModel.js
+        > empleadosModel.js
+        > sucursalesModel.js
+    > routes
+        > clientesRoutes.js
+        > empleadosRoutes.js
+        > sucursalesRoutes.js
+    > server.js
+
+clientesController.js:
+
+const clienteModel = require('../model/clientesModel');
+
+//Q6
+async function getSpecificClient(req, res) {
+    try {
+        const result = await clienteModel.specificClient();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q9
+async function getClientOver3Proyects(req, res) {
+    try {
+        const result = await clienteModel.clientOver3Proyects();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q14
+async function getNoVisits(req, res) {
+    try {
+        const result = await clienteModel.noVisits();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+module.exports = {
+    getSpecificClient,
+    getClientOver3Proyects,
+    getNoVisits
+}
+
+
+empleadosController.js
+
+const empleadoModel = require('../model/empleadosModel');
+
+//Q2
+async function getManagerOver3Projects(req, res) {
+    try {
+        const result = await empleadoModel.managerOver3Projects();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q3
+async function getBackendDevelopers(req, res) {
+    try {
+        const result = await empleadoModel.backendDevelopers();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q5
+async function getTechnicians(req, res) {
+    try {
+        const result = await empleadoModel.technicians();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q8
+async function getDevelopersOver500k(req, res) {
+    try {
+        const result = await empleadoModel.developersOver500k();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+module.exports = {
+    getManagerOver3Projects,
+    getBackendDevelopers,
+    getTechnicians,
+    getDevelopersOver500k
+}
+
+
+sucursalesController.js
+
+const sucursalModel = require('../model/sucursalesModel');
+
+//Q1
+async function getOver5Employees(req, res) {
+    try {
+        const result = await sucursalModel.over5Employees();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q4
+async function getOverMillion(req, res) {
+    try {
+        const result = await sucursalModel.overMillion();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q7
+async function getOver5Visits(req, res) {
+    try {
+        const result = await sucursalModel.over5Visits();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q10
+async function getOver5Fullstack(req, res) {
+    try {
+        const result = await sucursalModel.over5FullStack();
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q11
+async function postTraspassTechnicians(req, res) {
+    const { origen, destino } = req.body;
+    try {
+        const result = await sucursalModel.traspassTechnicians(origen, destino);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q12
+async function postManagerReplacement(req, res) {
+    const { sucursal, gerente } = req.body;
+    try {
+        const result = await sucursalModel.managerReplacement(sucursal, gerente);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q13
+async function postBranchChange(req, res) {
+    const { sucursalOrigen, sucursalDestino, proyecto } = req.body;
+    try {
+        const result = await sucursalModel.branchChange(sucursalOrigen, sucursalDestino, proyecto);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+//Q15
+async function postTransferEmployees(req, res) {
+    const { sucursalOrigen, sucursalDestino } = req.body;
+    try {
+        const result = await sucursalModel.transferEmployees(sucursalOrigen, sucursalDestino);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+module.exports = {
+    getOver5Employees,
+    getOverMillion,
+    getOver5Visits,
+    getOver5Fullstack,
+    postTraspassTechnicians,
+    postManagerReplacement,
+    postBranchChange,
+    postTransferEmployees
+}
+
+
+clientesModel.js
+
+const neo4j = require('neo4j-driver');
+let driver = neo4j.driver(
+    'neo4j://neo01:7687',
+    neo4j.auth.basic('neo4j', 'neo4j')
+);
+
+// Q6
+async function specificClient() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (c:Cliente {nombre: 'Raj Enterprises'})-[CONTRATA_PROYECTO]->(p:Proyecto)
+            RETURN p.nombre;`
+        );
+        return result.records.map(record => ({ Proyectos: record.get('p.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q9
+async function clientOver3Proyects() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (c:Cliente)-[:CONTRATA_PROYECTO]->(p:Proyecto)-[:PROYECTO_UBICADO]->(s:Sucursal)
+            WITH c, COUNT(DISTINCT s) AS numSucursales
+            WHERE numSucursales > 3
+            RETURN c.nombre;`
+        );
+        return result.records.map(record => ({ Clientes: record.get('c.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q14
+async function noVisits() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (c:Cliente)
+            WHERE NOT (c)<-[:VISITA_CLIENTE]-(:Visita)
+            RETURN c.nombre;`
+        );
+        return result.records.map(record => ({ Clientes: record.get('c.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+module.exports = {
+    specificClient,
+    clientOver3Proyects,
+    noVisits
+}
+
+
+empleadosModel.js
+
+const neo4j = require('neo4j-driver');
+let driver = neo4j.driver(
+    'neo4j://neo01:7687',
+    neo4j.auth.basic('neo4j', 'neo4j')
+);
+
+// Q2
+async function managerOver3Projects() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (e:Empleado)-[:GESTIONA_PROYECTO]->(p:Proyecto)
+            WITH e, COUNT(p) AS numProyectos
+            WHERE numProyectos > 3
+            RETURN e.nombre;`
+        );
+        return result.records.map(record => ({ Empleados: record.get('e.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q3
+async function backendDevelopers() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (e:Empleado {especializacion: 'Backend'})-[:TRABAJA_EN_PROYECTO]->(p:Proyecto)
+            WITH e, COUNT(p) AS numProyectos
+            WHERE numProyectos > 2
+            RETURN e.nombre;`
+        );
+        return result.records.map(record => ({ Empleados: record.get('e.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q5
+async function technicians() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (e:Empleado) WHERE e.tipo = 'Soporte' RETURN e.nombre;`
+        );
+        return result.records.map(record => ({ Empleados: record.get('e.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q8
+async function developersOver500k() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (e:Empleado{tipo: 'Desarrollador'})-[:TRABAJA_EN_PROYECTO]->(p:Proyecto)
+            WHERE p.presupuesto > 500000
+            RETURN e.nombre;`
+        );
+        return result.records.map(record => ({ Empleados: record.get('e.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+module.exports = {
+    managerOver3Projects,
+    backendDevelopers,
+    technicians,
+    developersOver500k
+}
+
+
+sucursalesModel.js
+
+const neo4j = require('neo4j-driver');
+let driver = neo4j.driver(
+    'neo4j://neo01:7687',
+    neo4j.auth.basic('neo4j', 'neo4j')
+);
+
+// Q1
+async function over5Employees() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (s:Sucursal)-[:TIENE_EMPLEADO]->(e:Empleado)
+            WITH s, COUNT(e) AS cantidadEmpleados
+            WHERE cantidadEmpleados > 5
+            RETURN s;`
+        );
+        return result.records.map(record => record.get('s').properties);
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q4
+async function overMillion() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (p:Proyecto)
+            WHERE p.presupuesto > 1000000
+            RETURN p.nombre;`
+        );
+        return result.records.map(record => ({ Proyectos: record.get('p.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q7
+async function over5Visits() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (s:Sucursal)<-[:VISITA_LUGAR]-(v:Visita)-[:VISITA_CLIENTE]->(c:Cliente)
+            WITH s, COUNT(DISTINCT c) AS cantidadClientes
+            WHERE cantidadClientes >= 5
+            RETURN s.nombre;`
+        );
+        return result.records.map(record => ({ Sucursales: record.get('s.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q10
+async function over5FullStack() {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (s:Sucursal)-[TIENE_EMPLEADO]->(e:Empleado {especializacion: 'Full-stack'})
+            WITH s, COUNT(e) AS numEmpleados
+            WHERE numEmpleados > 5
+            RETURN s.nombre;`
+        );
+        return result.records.map(record => ({ Sucursales: record.get('s.nombre') }));
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q11
+async function traspassTechnicians(sucOrigen, sucDestino) {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (s1:Sucursal {clave: '${sucOrigen}'})-[r:TIENE_EMPLEADO]->(e:Empleado {tipo: 'Soporte'}), (s2:Sucursal {clave: '${sucDestino}'})
+            MERGE (s2)-[:TIENE_EMPLEADO]->(e)
+            DELETE r;`
+        );
+        return { message: 'Empleados transferidos' };
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q12
+//SOLO SIRVE ESTA FUNCION
+async function managerReplacement(sucModificar, curpGer) {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (s:Sucursal {clave: '${sucModificar}'})-[r:TIENE_EMPLEADO]->(e:Empleado {tipo: 'Gerente'})
+            DELETE r
+            WITH s
+            MATCH (e2:Empleado {curp: '${curpGer}'})
+            MERGE (s)-[r:TIENE_EMPLEADO]->(e2);`
+        );
+        return { message: 'Gerente reemplazado' };
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q13
+async function branchChange(sucOrigen, sucDestino, proyId) {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (p:Proyecto {clave: '${proyId}'})-[r:PROYECTO_UBICADO]->(s1:Sucursal {clave: '${sucOrigen}'})
+            MATCH (s2:Sucursal {clave: '${sucDestino}'})
+            MERGE (p)-[:PROYECTO_UBICADO]->(s2)
+            DELETE r;`
+        );
+        return { message: 'Proyecto transferido' };
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+// Q15
+async function transferEmployees(sucOrigen, sucDestino) {
+    const session = driver.session();
+    try {
+        const result = await session.run(
+            `MATCH (s1:Sucursal {clave: '${sucOrigen}'})-[r:TIENE_EMPLEADO]->(e:Empleado), (s2:Sucursal {clave: '${sucDestino}'})
+            MERGE (s2)-[:TIENE_EMPLEADO]->(e)
+            DELETE r
+            DETACH DELETE s1;`
+        );
+        return { message: 'Empleados transferidos' };
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.close();
+    }
+}
+
+module.exports = {
+    over5Employees,
+    overMillion,
+    over5Visits,
+    over5FullStack,
+    traspassTechnicians,
+    managerReplacement,
+    branchChange,
+    transferEmployees
+};
+
+
+cache.js
+
+const redis = require('redis');
+const client = redis.createClient({
+    socket:{
+        port:6379,
+        host:'127.0.0.1'
+    }
+});
+
+const cache = async function (req, res, next) {
+    let fecha = new Date();
+    await client.connect();
+    await client.set(fecha.toLocaleDateString() + ":" + fecha.getHours() + "-" +
+    fecha.getMinutes() + "-" + fecha.getSeconds(), " - " + req.method + " " +
+    req.route.path);
+    await client.disconnect();
+    next()
+}
+module.exports = cache;
+
+
+clientesRoutes.js
+
+const express = require('express');
+const router = express.Router();
+const controller = require('../controller/clientesController');
+
+//Q6
+router.route('/clientes/clienteEspecifico').get(controller.getSpecificClient);
+
+//Q9
+router.route('/clientes/clientesMasDeTresProyectos').get(controller.getClientOver3Proyects);
+
+//Q14
+router.route('/clientes/clientesSinVisitas').get(controller.getNoVisits);
+
+module.exports = router;
+
+
+empleadosRoutes.js
+
+const express = require('express');
+const router = express.Router();
+const controller = require('../controller/empleadosController');
+
+//Q2
+router.route('/empleados/gerenteMasDeTresProyectos').get(controller.getManagerOver3Projects);
+
+//Q3
+router.route('/empleados/programadoresBackend').get(controller.getBackendDevelopers);
+
+//Q5
+router.route('/empleados/tecnicos').get(controller.getTechnicians);
+
+//Q8
+router.route('/empleados/programadoresMasDe500k').get(controller.getDevelopersOver500k);
+
+module.exports = router;
+
+
+sucursalesRoutes.js
+
+const express = require('express');
+const router = express.Router();
+const controller = require('../controller/sucursalesController');
+
+//Q1
+router.route('/sucursales/masDe5Empleados').get(controller.getOver5Employees);
+
+//Q4
+router.route('/proyectos/masDeMillon').get(controller.getOverMillion);
+
+//Q7
+router.route('/sucursales/masDe5Visitas').get(controller.getOver5Visits);
+
+//Q10
+router.route('/sucursales/masDe5Fullstack').get(controller.getOver5Fullstack);
+
+//Q11
+router.route('/empleados/traspasarTecnicos').post(controller.postTraspassTechnicians);
+
+//Q12
+router.route('/empleados/reemplazarGerente').post(controller.postManagerReplacement);
+
+//Q13
+router.route('/sucursales/transferirProyecto').post(controller.postBranchChange);
+
+//Q15
+router.route('/sucursales/transferirEmpleados').post(controller.postTransferEmployees);
+
+module.exports = router;
+
+
+logger.js
+
+const redis = require('redis');
+const client = redis.createClient({
+    socket:{
+        port:6379,
+        host:'redisStack'
+    }
+});
+
+// Exportar una función middleware que se ejecutará en cada solicitud
+module.exports = (req, res, next) => {
+    res.on('finish', async () => {
+        await client.connect();
+        const key = `${req.method}:${Date.now()}:${req.originalUrl}`;
+        const valor = JSON.stringify({
+            clave: key,
+            time: new Date(),
+            req: {
+                method: req.method,
+                url: req.originalUrl,
+                headers: req.headers,
+                body: req.body
+            },
+            res: {
+                statusCode: res.statusCode,
+                statusMessage: res.statusMessage,
+                response: req.method === 'GET' ? res.data : null
+            }
+        });
+        console.log(valor)
+        await client.set(key, valor);
+        await client.disconnect();
+    });
+    next();
+};
+
+
+server.js
+
+const express = require('express');
+const app = express();
+const neo4j = require('neo4j-driver');
+const bodyParser = require('body-parser');
+const PORT = 3000;
+
+const routeCliente = require('./routes/clientesRoutes');
+const routeEmpleado = require('./routes/empleadosRoutes');
+const routeSucursal = require('./routes/sucursalesRoutes');
+const logger = require('./routes/logger');
+
+//aplicando Middlewares
+app.use(logger);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+//aplicando rutas
+app.use('/api', routeCliente, routeEmpleado, routeSucursal);
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
+
+.dockerignore
+
+node_modules
+npm-debug.log
+
+
+.gitignore
+
+node_modules
+
+
+docker-compose.yml
+
+services:
+  app:
+    build: .
+    container_name: entregableU3
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis_stack
+      - neo4j
+    environment:
+      - NEO4J_URL=neo4j://neo01:7687
+    volumes:
+      - ./Regs:/app
+    networks:
+      - backend
+    command: npm start
+  
+  redis_stack:
+    image: redis/redis-stack
+    container_name: redisStack
+    ports:
+      - "6379:6379"
+      - "8001:8001"
+    depends_on:
+      - neo4j
+    networks:
+      - backend
+
+  neo4j:
+    image: neo4j
+    container_name: neo01
+    ports:
+      - "7687:7687"
+      - "7474:7474"
+    environment:
+      - NEO4J_AUTH=none
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
+
+Dockerfile
+
+FROM node
+WORKDIR /Regs
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD [ "npm", "start" ]
